@@ -1,0 +1,174 @@
+* { margin:0; 
+    padding:0; 
+    box-sizing:border-box; }
+
+body { font-family: Arial, sans-serif; 
+    background:#111; 
+    color:#fff; }
+
+/* Faixa */
+.header {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  padding:15px 30px; 
+  background-color: #1f1f1f;
+}
+.logo {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue
+    
+}
+
+/* Lupa */
+.search-bar {
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.search-bar i {
+  font-size: 1.2rem;
+  color:aliceblue
+}
+
+.header .user-login { 
+    display:flex; 
+    align-items:center; 
+    gap:5px; 
+    cursor:pointer; 
+    color:aliceblue
+}
+
+    /* Login */
+.login-popup {
+  display: none;
+  position: absolute;   
+  top: 60px;
+  right: 30px;
+  width: 300px;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.login-popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+/* CARROSSEL */
+
+.carousel-title {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  color:aliceblue;
+}
+
+.swiper { 
+    width:80%; 
+    max-width:1000px; 
+    height:500px; 
+    margin:30px auto; }
+
+.swiper-slide { 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center; 
+    align-items:center; 
+    background:transparent; }
+
+.swiper-slide img {
+  width:260px; 
+  height:380px; 
+  object-fit:cover; 
+  border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.6); 
+  transition:transform 0.5s; 
+  cursor:pointer;
+}
+
+.swiper-slide-active img { 
+    transform:scale(1.15); 
+}
+
+
+/* SOUNDTRACKS */
+.soundtracks { width:80%; 
+    max-width:900px; 
+    margin:30px auto; 
+    background:#1f1f1f; 
+    padding:20px; 
+    border-radius:10px; }
+
+.soundtracks h2 { 
+    margin-bottom:15px; 
+}
+.soundtracks ul { 
+    list-style:none; 
+}
+
+.soundtracks li { 
+    padding:8px 0; 
+    border-bottom:1px solid #2a2a2a; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; }
+
+.soundtracks audio { 
+    outline:none; 
+}
+
+/* FORUM */
+.forum {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.forum h2 {
+  margin-bottom: 15px;
+}
+
+.comment-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-box textarea {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.comment-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color:darkslateblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comments-list .comment {
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+}

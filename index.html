@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala Gamer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Sala Gamer</div>
+   <div class="search-bar">
+  <i class="fas fa-search"></i>
+</div>
+
+    <div class="user-login" id="loginBtn">
+      <i class="fas fa-user"></i>
+      <span>Login</span>
+    </div>
+  </header>
+
+  <!-- POP-UP LOGIN -->
+  <div class="login-popup" id="loginPopup">
+    <div class="login-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button>Entrar</button>
+      <p class="small-text">Não tem login? <a href="#">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <!-- CARROSSEL 3D -->
+  <h2 class="carousel-title">Jogos em Destaque</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="hollowknight.jpg" alt="Hollow Knight">
+      </div>
+      <div class="swiper-slide">
+        <img src="eldenring.jpg" alt="Elden Ring">
+      </div>
+      <div class="swiper-slide">
+        <img src="darksouls.jpg" alt="Dark Souls">
+      </div>
+      <div class="swiper-slide">
+        <img src="sekiro.jpg" alt="Sekiro">
+      </div>
+      <div class="swiper-slide">
+        <img src="stardewvalley.jpg" alt="Stardew Valley">
+      </div>
+    </div>
+  </div>
+
+  <!-- SOUNDTRACKS -->
+  <section class="soundtracks">
+    <h2>OSTs mais ouvidas</h2>
+    <ul>
+      <li>
+        Hollow Knight - The Grimm Theme
+        <audio controls>
+          <source src="hollowknight.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li>
+        Elden Ring - Main Theme
+        <audio controls>
+          <source src="eldenring.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li>
+        Dark Souls - Abyss Watchers
+        <audio controls>
+          <source src="darksouls.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li>
+        Cyberpunk 2077 - V's Theme
+        <audio controls>
+          <source src="cyberpunk.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FÓRUM DE COMENTÁRIOS -->
+  <section class="forum">
+    <h2>Comentários</h2>
+    <div class="comment-box">
+      <textarea placeholder="Escreva seu comentário..."></textarea>
+      <button>Enviar</button>
+    </div>
+    <div class="comments-list">
+      <div class="comment"><strong>Usuário1:</strong> Hollow Knight é jogaço, me perco de 5 em 5 min </div>
+      <div class="comment"><strong>Usuário2:</strong> Elden Ring é lindo, jogo lindo</div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
